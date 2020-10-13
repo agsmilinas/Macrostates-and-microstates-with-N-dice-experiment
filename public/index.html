@@ -1,0 +1,78 @@
+<!doctype html>
+<!-- Por Alejandro Salinas Medina -->
+<html>
+
+<head>
+    <title>Generación Macroestados y Microestados</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/main.css">
+</head>
+
+<body style="background-color: #2196F3">
+    <div class="container">
+        <br>
+        <div class="jumbotron" style="border: 2px solid black; border-radius: 5px">
+            <div class="unam">
+                <h1 align=center>Universidad Nacional Autónoma de México</h1>
+                <br>
+                <div align=center>
+                    <img class="logo-unam" style="width: 500px;height: 500px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Escudo-UNAM-escalable.svg/800px-Escudo-UNAM-escalable.svg.png" alt="">
+                </div>
+            </div>
+            <div class="datos">
+                <br>
+                <h2 align=center>Instituto de Investigaciones en Matemáticas Aplicadas y en Sistemas </h2>
+                <br>
+                <h3 align=center>Temas Selectos de Inteligencia Artificial: Detección de Anomalías</h3>
+                <br>
+                <h4 align=center>Dr. Jose Antonio Neme Castillo</h4>
+                <br>
+                <h5 align=center>Alejandro Salinas Medina</h5>
+                <br>
+                <h6 align=center>Macroestados y microestados</h6>
+                <br>
+                <button class="btn btn-primary btn-inicio">Iniciar</button>
+            </div>
+            <div class="aplicacion" id="aplicacion">
+                <h2 align=center>Generación Macroestados y Microestados </h2>
+                <br>
+                <h3 align=center>Experimento "N" Dados</h3>
+                <br>
+                <img class="dados" src="https://image.flaticon.com/icons/png/512/99/99875.png" tyle="width: 250px;height: 250px;" alt="">
+                <label for="n-input">Ingrese Cantidad "N" de dados</label>
+                <input type="number" name="n-input" class="n-dados">
+                <br>
+                <button class="btn btn-primary btn-exp">Generar Experimento</button>
+            </div>
+            <div style="border: 2px solid black; border-radius: 5px; margin-top: 5%;margin-bottom: 5%;" class="experimento" id="experimento">
+                <br>
+                <h5 align=center class="numero_dados_experimento_1">Microestado (Estados Equiprobables) de los ${n_dados} dados</h5>
+                <img class="" src="../static/imgs/prob.png" tyle="width: 250px;height: 250px;" alt="">
+                <br>
+            </div>
+            <div style="border: 2px solid black; border-radius: 5px; margin-top: 5%;margin-bottom: 5%;" class="formula" id="formula">
+                <br>
+                <h5 align=center>Probabilidades Independientes</h5>
+                <br>
+                <p>Probabilidad = Número de resultados deseados ÷ Número de resultados posibles</p>
+                <br>
+                <img class="" src="../static/imgs/formula.png" tyle="width: 250px;height: 250px;" alt="">
+                <br>
+            </div>
+            <div style="border: 2px solid black; border-radius: 5px; margin-top: 5%;margin-bottom: 5%;" class="experimento_2" id="experimento_2">
+                <br>
+                <h5 align=center class="numero_dados_experimento_1">Macroestados Posibles</h5>
+                <br>
+            </div>
+            <div style="border: 2px solid black; border-radius: 5px; margin-top: 5%;margin-bottom: 5%;height: 700px;" class="experimento_3" id="experimento_3">
+
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+        <script src="../static/js/main.js"></script>
+
+
+</body>
+
+</html>
